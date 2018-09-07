@@ -1,0 +1,6 @@
+FIND_PACKAGE(extlib REQUIRED)
+
+AUX_SOURCE_DIRECTORY(. DIR_SRCS)
+
+ADD_EXECUTABLE(module_yyy ${DIR_SRCS})
+TARGET_LINK_LIBRARIES(module_yyy l5_api boost_thread)
